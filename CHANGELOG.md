@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.0...v1.0.1) (2023-12-11)
+
+
+### Bug Fixes
+
+* build issues ([b2127df](https://github.com/yamcodes/hooked-on-firebase/commit/b2127df5bf5fb91ec991d6b07f9c2ccd755cab83))
+
 ## 1.0.0 (2023-12-11)
 
 
