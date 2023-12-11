@@ -2,7 +2,8 @@
 
 A set of reusable [React Hooks](https://reactjs.org/docs/hooks-intro.html) for [Firebase (v9 and up)](https://firebase.google.com/).
 
-> [!NOTE] > **This is fork of [react-firebase-hooks](https://github.com/CSFrequency/hooked-on-firebase) with 2 additions:**
+> [!NOTE]
+> **This is fork of [react-firebase-hooks](https://github.com/CSFrequency/hooked-on-firebase) with 2 additions:**
 >
 > 1. The [React 18 fix PR](https://github.com/CSFrequency/hooked-on-firebase/pull/298)
 > 2. The [`useSignInWithCustomToken` PR](https://github.com/CSFrequency/hooked-on-firebase/pull/304)
