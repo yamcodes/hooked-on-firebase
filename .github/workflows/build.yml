@@ -1,11 +1,32 @@
-name: build
-on: push
+name: release
+on:
+  push:
+    branches:
+      - main
 jobs:
-  build:
+  create-release:
     runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          package-name: 'hooked-on-firebase'
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+    needs: create-release
+    if: ${{ needs.create-release.outputs.release_created }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 16
       - name: Cache node modules
@@ -20,7 +41,9 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: Install
+      - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run build
+      - name: Build and publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
