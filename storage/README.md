@@ -6,10 +6,10 @@ Firebase Cloud Storage. The hooks wrap around the `getDownloadURL(...)` method.
 In addition to returning the download URL, the hooks provide an `error` and `loading` property
 to give a complete lifecycle for loading from Cloud Storage.
 
-All hooks can be imported from `react-firebase-hooks/storage`, e.g.
+All hooks can be imported from `hooked-on-firebase/storage`, e.g.
 
 ```js
-import { useDownloadURL } from 'react-firebase-hooks/storage';
+import { useDownloadURL } from 'hooked-on-firebase/storage';
 ```
 
 List of Cloud Storage hooks:
@@ -39,7 +39,7 @@ Returns:
 
 ```js
 import { getStorage, ref as storageRef } from 'firebase/storage';
-import { useDownloadURL } from 'react-firebase-hooks/storage';
+import { useDownloadURL } from 'hooked-on-firebase/storage';
 
 const storage = getStorage(firebaseApp);
 
@@ -81,7 +81,7 @@ The `useUploadFile` hook returns the following:
 
 ```js
 import { getStorage, storageRef } from 'firebase/storage';
-import { useUploadFile } from 'react-firebase-hooks/storage';
+import { useUploadFile } from 'hooked-on-firebase/storage';
 
 const storage = getStorage(firebaseApp);
 

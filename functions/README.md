@@ -3,15 +3,15 @@
 React Firebase Hooks provides a convenience hook for HttpsCallable functions, providing an `error` and `loading` property
 to give a complete lifecycle for executing a HttpsCallable function on Firebase Cloud Functions.
 
-All hooks can be imported from `react-firebase-hooks/functions`, e.g.
+All hooks can be imported from `hooked-on-firebase/functions`, e.g.
 
 ```js
-import { useHttpsCallable } from 'react-firebase-hooks/functions';
+import { useHttpsCallable } from 'hooked-on-firebase/functions';
 ```
 
 List of Cloud Functions hooks:
 
-- [React Firebase Hooks - Cloud Functions](#react-firebase-hooks---cloud-functions)
+- [React Firebase Hooks - Cloud Functions](#hooked-on-firebase---cloud-functions)
   - [useHttpsCallable](#usehttpscallable)
     - [Full example](#full-example)
 
@@ -38,7 +38,7 @@ Returns:
 
 ```js
 import { getFunctions } from 'firebase/functions';
-import { useHttpsCallable } from 'react-firebase-hooks/functions';
+import { useHttpsCallable } from 'hooked-on-firebase/functions';
 
 const HttpsCallable = () => {
   const [executeCallable, executing, error] = useHttpsCallable(

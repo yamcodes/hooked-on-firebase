@@ -6,15 +6,15 @@ Firebase Realtime Database. The hooks wrap around the `onX(...)` method.
 In addition to returning the list or value, the hooks provide an `error` and `loading` property
 to give a complete lifecycle for loading and listening to the Realtime Database.
 
-All hooks can be imported from `react-firebase-hooks/database`, e.g.
+All hooks can be imported from `hooked-on-firebase/database`, e.g.
 
 ```js
-import { useList } from 'react-firebase-hooks/database';
+import { useList } from 'hooked-on-firebase/database';
 ```
 
 List of Realtime Database hooks:
 
-- [React Firebase Hooks - Realtime Database](#react-firebase-hooks---realtime-database)
+- [React Firebase Hooks - Realtime Database](#hooked-on-firebase---realtime-database)
     - [useList](#uselist)
       - [Full Example](#full-example)
     - [useListKeys](#uselistkeys)
@@ -51,7 +51,7 @@ Returns:
 
 ```js
 import { ref, getDatabase } from 'firebase/database';
-import { useList } from 'react-firebase-hooks/database';
+import { useList } from 'hooked-on-firebase/database';
 
 const database = getDatabase(firebaseApp);
 
@@ -142,7 +142,7 @@ Returns:
 
 ```js
 import { ref, getDatabase } from 'firebase/database';
-import { useObject } from 'react-firebase-hooks/database';
+import { useObject } from 'hooked-on-firebase/database';
 
 const database = getDatabase(firebaseApp);
 

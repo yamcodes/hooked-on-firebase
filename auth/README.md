@@ -2,10 +2,10 @@
 
 React Firebase Hooks provides a convenience listener for Firebase Auth's auth state. The hook wraps around the `auth.onAuthStateChange(...)` method to ensure that it is always up to date.
 
-All hooks can be imported from `react-firebase-hooks/auth`, e.g.
+All hooks can be imported from `hooked-on-firebase/auth`, e.g.
 
 ```js
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuthState } from 'hooked-on-firebase/auth';
 ```
 
 List of Auth hooks:
@@ -58,7 +58,7 @@ Returns:
 
 ```js
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuthState } from 'hooked-on-firebase/auth';
 
 const auth = getAuth(firebaseApp);
 
@@ -124,7 +124,7 @@ Returns:
 
 ```js
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { useIdToken } from 'react-firebase-hooks/auth';
+import { useIdToken } from 'hooked-on-firebase/auth';
 
 const auth = getAuth(firebaseApp);
 
@@ -194,7 +194,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'hooked-on-firebase/auth';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -294,7 +294,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword } from 'hooked-on-firebase/auth';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -509,7 +509,7 @@ See [social login example](#social-login-example)
 ### Social Login Example
 
 ```jsx
-import { useSignInWithXXX } from 'react-firebase-hooks/auth';
+import { useSignInWithXXX } from 'hooked-on-firebase/auth';
 
 const SignIn = () => {
   const [signInWithXXX, user, loading, error] = useSignInWithXXX(auth);
@@ -572,7 +572,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useSendSignInLinkToEmail } from 'react-firebase-hooks/auth';
+import { useSendSignInLinkToEmail } from 'hooked-on-firebase/auth';
 
 const SendSignInLinkToEmail = () => {
   const [email, setEmail] = useState('');
@@ -656,7 +656,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useSignInWithEmailLink } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailLink } from 'hooked-on-firebase/auth';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -726,7 +726,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useUpdateEmail } from 'react-firebase-hooks/auth';
+import { useUpdateEmail } from 'hooked-on-firebase/auth';
 
 const UpdateEmail = () => {
   const [email, setEmail] = useState('');
@@ -785,7 +785,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useUpdatePassword } from 'react-firebase-hooks/auth';
+import { useUpdatePassword } from 'hooked-on-firebase/auth';
 
 const UpdatePassword = () => {
   const [password, setPassword] = useState('');
@@ -844,7 +844,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useUpdateProfile } from 'hooked-on-firebase/auth';
 
 const UpdateProfile = () => {
   const [displayName, setDisplayName] = useState('');
@@ -911,7 +911,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useVerifyBeforeUpdateEmail } from 'react-firebase-hooks/auth';
+import { useVerifyBeforeUpdateEmail } from 'hooked-on-firebase/auth';
 
 const VerifyBeforeUpdateEmail = () => {
   const [email, setEmail] = useState('');
@@ -976,7 +976,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail } from 'hooked-on-firebase/auth';
 
 const SendPasswordReset = () => {
   const [email, setEmail] = useState('');
@@ -1044,7 +1044,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useSendEmailVerification } from 'hooked-on-firebase/auth';
 
 const SendEmailVerification = () => {
   const [email, setEmail] = useState('');
@@ -1100,7 +1100,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useSignOut } from 'react-firebase-hooks/auth';
+import { useSignOut } from 'hooked-on-firebase/auth';
 
 const SignOut = () => {
   const [signOut, loading, error] = useSignOut(auth);
@@ -1153,7 +1153,7 @@ Returns:
 #### Full Example
 
 ```jsx
-import { useDeleteUser } from 'react-firebase-hooks/auth';
+import { useDeleteUser } from 'hooked-on-firebase/auth';
 
 const DeleteUser = () => {
   const [deleteUser, loading, error] = useDeleteUser(auth);

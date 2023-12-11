@@ -10,15 +10,15 @@ There are 2 variants of each hook:
 - `useX` which subscribes to the underlying Collection or Document and listens for changes
 - `useXOnce` which reads the current value of the Collection or Document
 
-All hooks can be imported from `react-firebase-hooks/firestore`, e.g.
+All hooks can be imported from `hooked-on-firebase/firestore`, e.g.
 
 ```js
-import { useCollection } from 'react-firebase-hooks/firestore';
+import { useCollection } from 'hooked-on-firebase/firestore';
 ```
 
 List of Cloud Firestore hooks:
 
-- [React Firebase Hooks - Cloud Firestore](#react-firebase-hooks---cloud-firestore)
+- [React Firebase Hooks - Cloud Firestore](#hooked-on-firebase---cloud-firestore)
   - [useCollection](#usecollection)
     - [Full example](#full-example)
   - [useCollectionOnce](#usecollectiononce)
@@ -61,7 +61,7 @@ Returns:
 
 ```js
 import { getFirestore, collection } from 'firebase/firestore';
-import { useCollection } from 'react-firebase-hooks/firestore';
+import { useCollection } from 'hooked-on-firebase/firestore';
 
 const FirestoreCollection = () => {
   const [value, loading, error] = useCollection(
@@ -192,7 +192,7 @@ Returns:
 
 ```js
 import { getFirestore, doc } from 'firebase/firestore';
-import { useDocument } from 'react-firebase-hooks/firestore';
+import { useDocument } from 'hooked-on-firebase/firestore';
 
 const FirestoreDocument = () => {
   const [value, loading, error] = useDocument(
@@ -294,7 +294,7 @@ See [Transforming data](#transforming-data) for how to transform data as it leav
 
 Firestore allows a restricted number of data types in its store, which may not be flexible enough for your application. As of Firebase 9, there is a built in FirestoreDataConverter which allows you to transform data as it leaves the Firestore database, as well as access the `id` and `ref` fields of the underlying snapshot. This is described here: https://firebase.google.com/docs/reference/js/firestore_.firestoredataconverter
 
-> NOTE: This replaces the `transform`, `idField` and `refField` options that were available in `react-firebase-hooks` v4 and earlier.
+> NOTE: This replaces the `transform`, `idField` and `refField` options that were available in `hooked-on-firebase` v4 and earlier.
 
 ### Example
 

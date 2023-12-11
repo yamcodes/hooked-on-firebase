@@ -3,15 +3,15 @@
 React Firebase Hooks provides a convenience hook for getting a cloud messaging token, providing an `error` and `loading` property
 to give a complete lifecycle for accessing the cloud messaging token on Firebase Cloud Messaging.
 
-All hooks can be imported from `react-firebase-hooks/messaging`, e.g.
+All hooks can be imported from `hooked-on-firebase/messaging`, e.g.
 
 ```js
-import { useToken } from 'react-firebase-hooks/messaging';
+import { useToken } from 'hooked-on-firebase/messaging';
 ```
 
 List of Cloud Messaging hooks:
 
-- [React Firebase Hooks - Cloud Messaging](#react-firebase-hooks---cloud-messaging)
+- [React Firebase Hooks - Cloud Messaging](#hooked-on-firebase---cloud-messaging)
   - [useToken](#usetoken)
     - [Full example](#full-example)
 
@@ -38,7 +38,7 @@ Returns:
 
 ```js
 import { getMessaging } from 'firebase/messaging';
-import { useToken } from 'react-firebase-hooks/messaging';
+import { useToken } from 'hooked-on-firebase/messaging';
 
 const MessagingToken = () => {
   const [token, loading, error] = useToken(getMessaging(firebaseApp));
