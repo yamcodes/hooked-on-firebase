@@ -17,14 +17,14 @@ A set of reusable [React Hooks](https://reactjs.org/docs/hooks-intro.html) for [
   <summary>npm</summary>
   
   ```sh
-  npm install "https://github.com/yamcodes/hooked-on-firebase.git#main"
+  npm install hooked-on-firebase
   ```
 </details>
 <details>
   <summary>Yarn</summary>
   
   ```sh
-  yarn add "https://github.com/yamcodes/hooked-on-firebase.git#main"
+  yarn add hooked-on-firebase
   ```
 </details>
 
