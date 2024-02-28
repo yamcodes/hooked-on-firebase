@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.1...v1.0.2) (2024-02-28)
+
+
+### Bug Fixes
+
+* export `useSignInWithCustomToken` ([56d3c2c](https://github.com/yamcodes/hooked-on-firebase/commit/56d3c2c7c218b74928e464a98a2cd66f424301fb))
+
 ## [1.0.1](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.0...v1.0.1) (2023-12-11)
 
 
