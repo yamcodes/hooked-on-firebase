@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.3...v1.0.4) (2024-02-28)
+
+
+### Bug Fixes
+
+* Update .gitignore ([deebc41](https://github.com/yamcodes/hooked-on-firebase/commit/deebc4196145f66bb70404815ba95c7948a12c89))
+
 ## [1.0.3](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.2...v1.0.3) (2024-02-28)
 
 
