@@ -13,7 +13,6 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: 'hooked-on-firebase'
   publish:
     runs-on: ubuntu-latest
     permissions:
