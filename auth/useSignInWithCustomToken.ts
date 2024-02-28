@@ -19,7 +19,6 @@ export default (auth: Auth): SignInWithCustomTokenHook => {
       try {
         const user = await firebaseSignInWithCustomToken(auth, token);
         setLoggedInUser(user);
-
         return user;
       } catch (err) {
         setError(err as AuthError);
