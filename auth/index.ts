@@ -41,3 +41,4 @@ export {
   VerifyBeforeUpdateEmailHook,
 } from './useUpdateUser';
 export { default as useIdToken, IdTokenHook } from './useIdToken';
+export { default as useSignInWithCustomToken } from './useSignInWithCustomToken';
