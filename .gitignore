@@ -14,7 +14,7 @@ npm-debug.log
 .nyc_output
 coverage
 
-#test files
+# Test files
 /example
 fire*.log
 /.idea/
