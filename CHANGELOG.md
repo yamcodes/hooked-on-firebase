@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.2...v1.0.3) (2024-02-28)
+
+
+### Bug Fixes
+
+* remove line ([3ea5add](https://github.com/yamcodes/hooked-on-firebase/commit/3ea5addea658cb95abe552b5952bd76755f41c4b))
+
 ## [1.0.2](https://github.com/yamcodes/hooked-on-firebase/compare/v1.0.1...v1.0.2) (2024-02-28)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "hooked-on-firebase",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Hooks for Firebase",
   "author": "Yam Borodetsky <hi@yam.codes>",
   "license": "Apache-2.0",
